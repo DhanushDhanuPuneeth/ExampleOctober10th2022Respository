@@ -1,0 +1,414 @@
+<html>
+<head>
+<title>TestNG:  Automation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Automation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>67/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 27 23:58:42 PST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>425 seconds (425792 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.closeapp()'><b>closeapp</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement4.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.assingement4</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement4@53fdffa1</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement1.login()'><b>login</b><br>Test class: com.sgtesting.testng.assingement1</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.testng.assingement1@49c7b90e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement4.login()'><b>login</b><br>Test class: com.sgtesting.testng.assingement4</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.testng.assingement4@53fdffa1</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.minimizeFlyoutwindow()'><b>minimizeFlyoutwindow</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.createtask()'><b>createtask</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement5.lanchBrowser()'><b>lanchBrowser</b><br>Test class: com.sgtesting.testng.assingement5</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testng.assingement5@5562c41e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement7.lanchBrowser()'><b>lanchBrowser</b><br>Test class: com.sgtesting.testng.assingement7</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testng.assingement7@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement5.deletecustomer()'><b>deletecustomer</b><br>Test class: com.sgtesting.testng.assingement5</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement5@5562c41e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement1.createuser()'><b>createuser</b><br>Test class: com.sgtesting.testng.assingement1</td>
+<td></td>
+<td>13</td>
+<td>com.sgtesting.testng.assingement1@49c7b90e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement6.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.assingement6</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement6@32ee6fee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement1.minimizeFlyoutwindow()'><b>minimizeFlyoutwindow</b><br>Test class: com.sgtesting.testng.assingement1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement1@49c7b90e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.login()'><b>login</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement7.closeapp()'><b>closeapp</b><br>Test class: com.sgtesting.testng.assingement7</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement7@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement5.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.assingement5</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testng.assingement5@5562c41e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement7.deletecustomer()'><b>deletecustomer</b><br>Test class: com.sgtesting.testng.assingement7</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement7@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement2.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.assingement2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement2@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement4.createcustomer()'><b>createcustomer</b><br>Test class: com.sgtesting.testng.assingement4</td>
+<td></td>
+<td>11</td>
+<td>com.sgtesting.testng.assingement4@53fdffa1</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement4.minimizeFlyoutwindow()'><b>minimizeFlyoutwindow</b><br>Test class: com.sgtesting.testng.assingement4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement4@53fdffa1</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement4.closeapp()'><b>closeapp</b><br>Test class: com.sgtesting.testng.assingement4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement4@53fdffa1</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement7.deleteproject()'><b>deleteproject</b><br>Test class: com.sgtesting.testng.assingement7</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement7@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement4.deletecustomer()'><b>deletecustomer</b><br>Test class: com.sgtesting.testng.assingement4</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement4@53fdffa1</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement5.login()'><b>login</b><br>Test class: com.sgtesting.testng.assingement5</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.testng.assingement5@5562c41e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement6.login()'><b>login</b><br>Test class: com.sgtesting.testng.assingement6</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.testng.assingement6@32ee6fee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement7.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.assingement7</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testng.assingement7@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement6.deleteproject()'><b>deleteproject</b><br>Test class: com.sgtesting.testng.assingement6</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement6@32ee6fee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.deletetask()'><b>deletetask</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement7.createcustomer()'><b>createcustomer</b><br>Test class: com.sgtesting.testng.assingement7</td>
+<td></td>
+<td>11</td>
+<td>com.sgtesting.testng.assingement7@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement1.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.assingement1</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testng.assingement1@49c7b90e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement5.modifycustomer()'><b>modifycustomer</b><br>Test class: com.sgtesting.testng.assingement5</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement5@5562c41e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement2.createuser()'><b>createuser</b><br>Test class: com.sgtesting.testng.assingement2</td>
+<td></td>
+<td>13</td>
+<td>com.sgtesting.testng.assingement2@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement2.closeapp()'><b>closeapp</b><br>Test class: com.sgtesting.testng.assingement2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement2@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement7.login()'><b>login</b><br>Test class: com.sgtesting.testng.assingement7</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.testng.assingement7@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement4.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.assingement4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement4@53fdffa1</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement5.minimizeFlyoutwindow()'><b>minimizeFlyoutwindow</b><br>Test class: com.sgtesting.testng.assingement5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement5@5562c41e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement7.minimizeFlyoutwindow()'><b>minimizeFlyoutwindow</b><br>Test class: com.sgtesting.testng.assingement7</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement7@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement1.lanchBrowser()'><b>lanchBrowser</b><br>Test class: com.sgtesting.testng.assingement1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testng.assingement1@49c7b90e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement5.closeapp()'><b>closeapp</b><br>Test class: com.sgtesting.testng.assingement5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement5@5562c41e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement6.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.assingement6</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testng.assingement6@32ee6fee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement6.minimizeFlyoutwindow()'><b>minimizeFlyoutwindow</b><br>Test class: com.sgtesting.testng.assingement6</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement6@32ee6fee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement4.lanchBrowser()'><b>lanchBrowser</b><br>Test class: com.sgtesting.testng.assingement4</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testng.assingement4@53fdffa1</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement6.createproject()'><b>createproject</b><br>Test class: com.sgtesting.testng.assingement6</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement6@32ee6fee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement5.createcustomer()'><b>createcustomer</b><br>Test class: com.sgtesting.testng.assingement5</td>
+<td></td>
+<td>11</td>
+<td>com.sgtesting.testng.assingement5@5562c41e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement6.closeapp()'><b>closeapp</b><br>Test class: com.sgtesting.testng.assingement6</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement6@32ee6fee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement1.delectuser()'><b>delectuser</b><br>Test class: com.sgtesting.testng.assingement1</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement1@49c7b90e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement2.minimizeFlyoutwindow()'><b>minimizeFlyoutwindow</b><br>Test class: com.sgtesting.testng.assingement2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement2@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement2.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.assingement2</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testng.assingement2@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.deletecustomer()'><b>deletecustomer</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement2.lanchBrowser()'><b>lanchBrowser</b><br>Test class: com.sgtesting.testng.assingement2</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testng.assingement2@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement7.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.assingement7</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement7@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement5.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.assingement5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement5@5562c41e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement1.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.assingement1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement1@49c7b90e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement7.createproject()'><b>createproject</b><br>Test class: com.sgtesting.testng.assingement7</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement7@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.deleteproject()'><b>deleteproject</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.lanchBrowser()'><b>lanchBrowser</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement7.modproject()'><b>modproject</b><br>Test class: com.sgtesting.testng.assingement7</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement7@4d0f2471</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement6.createcustomer()'><b>createcustomer</b><br>Test class: com.sgtesting.testng.assingement6</td>
+<td></td>
+<td>11</td>
+<td>com.sgtesting.testng.assingement6@32ee6fee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement2.modifyuser()'><b>modifyuser</b><br>Test class: com.sgtesting.testng.assingement2</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testng.assingement2@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.createcustomer()'><b>createcustomer</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>11</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.logout()'><b>logout</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement8.createproject()'><b>createproject</b><br>Test class: com.sgtesting.testng.assingement8</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement8@7133da86</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement2.login()'><b>login</b><br>Test class: com.sgtesting.testng.assingement2</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.testng.assingement2@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement1.closeapp()'><b>closeapp</b><br>Test class: com.sgtesting.testng.assingement1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testng.assingement1@49c7b90e</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement6.deletecustomer()'><b>deletecustomer</b><br>Test class: com.sgtesting.testng.assingement6</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement6@32ee6fee</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement2.delectuser()'><b>delectuser</b><br>Test class: com.sgtesting.testng.assingement2</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testng.assingement2@4d465b11</td></tr>
+<tr>
+<td title='com.sgtesting.testng.assingement6.lanchBrowser()'><b>lanchBrowser</b><br>Test class: com.sgtesting.testng.assingement6</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testng.assingement6@32ee6fee</td></tr>
+</table><p>
+</body>
+</html>

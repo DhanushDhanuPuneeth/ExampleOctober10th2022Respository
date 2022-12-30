@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Scenarious">
+
+<test name="Automation">
+<classes>
+ <class name="com.sgtesting.testng.assingement1"></class>
+  <class name="com.sgtesting.testng.assingement2"></class>
+  <class name="com.sgtesting.testng.assingement4"></class>
+  <class name="com.sgtesting.testng.assingement5"></class>
+  <class name="com.sgtesting.testng.assingement6"></class>
+  <class name="com.sgtesting.testng.assingement7"></class>
+  <class name="com.sgtesting.testng.assingement8"></class>
+  
+  
+ </classes>
+ </test>
+ </suite>
